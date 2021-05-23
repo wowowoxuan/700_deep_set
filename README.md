@@ -1,10 +1,16 @@
 # 700_deep_set
+This is the repo for CIS700 final project!
+
+If there are any issue with the code, please let us know! Thanks a lot!
+
 Environment Setup: pip install -r requirements.txt
 
 Run code for different task:
 
 Copy_v0 and DuplicatedInput_v0 use the same model configurations for testing, we change the number layers in the permutation equivariant stack(If you want to test different configuration, please change the code in ./model/Deepsets.py, and then the permutation equivariant stack is from line 58 to 69.)
 The training curve will be generated in task_0_fig and task_1_fig folder.
+
+The generating of the data need about 2 to 4 mins, please wait. Thanks for the patience.
 
 Copy_v0(Weiheng Chai):
 
