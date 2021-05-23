@@ -18,7 +18,7 @@ def generate_training_data(num_samples):
             onehot = [0] * 26
             onehot[idx] = 1
             temp_list.append(onehot)
-            temp_list.append(onehot)
+            # temp_list.append(onehot)
         # print(temp_list)
         training_set.append(temp_list)
     np.save('./task_0_data/task_0_train.npy',np.array(training_set))
