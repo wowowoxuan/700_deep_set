@@ -56,6 +56,10 @@ class Deepset(nn.Module):
     else:
       self.perm = nn.Sequential(
 #===================================================permutation equivariant stack======================================
+# comment:
+# PermEqui_mean(self.x_dim, self.d_dim),
+# nn.Tanh(),
+# to change the number of layers in the permutation equivariant stack
         PermEqui_mean(self.x_dim, self.d_dim),
         nn.Tanh(),
         PermEqui_mean(self.d_dim, self.d_dim),  
