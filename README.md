@@ -7,6 +7,7 @@ Copy_v0 and DuplicatedInput_v0 use the same model configurations for testing, we
 The training curve will be generated in task_0_fig and task_1_fig folder.
 
 Copy_v0(Weiheng Chai):
+
 1.First step is generating dataset:
 
 cd data
@@ -26,6 +27,7 @@ python test_task_0.py
 
 
 DuplicatedInput_v0(Feng Wang):
+
 1.First step is generating dataset:
 
 cd data
@@ -41,6 +43,9 @@ python train_task_1.py
 3.The third step is testing on different datasets:
 
 python test_task_1.py
+
+
+
 
 Repeat Copy(Minmin Yang):
 
