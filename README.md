@@ -10,7 +10,9 @@ Copy_v0(Weiheng Chai):
 1.First step is generating dataset:
 
 cd data
+
 python generate_data_task_0.py
+
 cd ..
 
 2.Second step is training the model:
@@ -27,7 +29,9 @@ DuplicatedInput_v0(Feng Wang):
 1.First step is generating dataset:
 
 cd data
+
 python generate_data_task_1.py
+
 cd ..
 
 2.Second step is training the model:
@@ -45,7 +49,9 @@ For different configurations, please change the number of layers in permutation 
 1.First step is generating dataset:
 
 cd data
+
 python generate_data_task_2.py
+
 cd ..
 
 2.The sencond step will train and test model:
