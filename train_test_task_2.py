@@ -14,7 +14,7 @@ import datetime
 import matplotlib.pyplot as plt
 
 # different configs
-num_layers = 2
+num_layers = 2 # 2 or 4 permutation equivariant layers
 layer_size = 64 # 64, 128, 512
 # leng = "same" # "same" or "diff"
 
@@ -25,9 +25,13 @@ layer_size = 64 # 64, 128, 512
 if not os.path.exists('./train_task_2_statedict'):
     os.mkdir('./train_task_2_statedict')
 
+if not os.path.exists('./task_2_fig'):
+    os.mkdir('./task_2_fig')
+
+
 logger = logging.getLogger(__name__)
 time_stamp = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-log_dir = "logfile"
+# log_dir = "logfile"
 # log_dir = 'model_logs/'.format(time_stamp, log_dir)
 
 def logger_init():
@@ -35,8 +39,11 @@ def logger_init():
     Initialize the logger to some file.
     """
     logging.basicConfig(level=logging.INFO)
+    logpath = "task2_logs/"
+    if not os.path.exists(logpath):
+        os.makedirs(logpath)
 
-    logfile = 'task2_logs/{}layers_{}size_{}.log'.format(num_layers, layer_size, log_dir)
+    logfile = 'task2_logs/{}layers_{}size_logfile.log'.format(num_layers, layer_size)
     # if not os.path.isfile(logfile):
     #     open(logfile, 'w').close()
     fh = logging.FileHandler(logfile, mode='w')
